@@ -303,7 +303,7 @@ class RSCSV_Import_Post_Helper
      * @param (array) $data
      * @return (boolean) True on success, false on failure.
      */
-    public function addMediaFile($file, $data = null)
+    public function addMediaFile($file, $data = array())
     {
         if (parse_url($file, PHP_URL_SCHEME)) {
             $file = $this->remoteGet($file);
